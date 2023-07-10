@@ -72,12 +72,12 @@ save_n_epoch_ratio = 1
 save_state = false
 train_batch_size = 1
 mem_eff_attn = false
-max_train_steps = 3305
+max_train_steps = 1000
 max_data_loader_n_workers = 1
 persistent_data_loader_workers = true
 gradient_checkpointing = true
 gradient_accumulation_steps = 2
-mixed_precision = "fp16"
+mixed_precision = "bf16"
 logging_dir = "logs"
 log_prefix = "last"
 
@@ -95,7 +95,6 @@ save_model_as = "safetensors"
     --config_file=/workspace/config.toml\
     --dataset_config=/workspace/config_dataset.toml \
     --xformers \
-    --mixed_precision="bf16" \
     --cache_latents \
     --full_bf16\
     --cache_text_encoder_outputs
