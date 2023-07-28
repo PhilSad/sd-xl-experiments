@@ -2,7 +2,7 @@
 keep_tokens = 2
 
   [[datasets.subsets]]
-  image_dir = '/workspace/data/philresize'
+  image_dir = '/workspace/data/phil_1024'
   class_tokens = 'shs man'
   num_repeats = 10
 
