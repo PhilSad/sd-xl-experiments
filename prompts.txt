@@ -1,0 +1,4 @@
+picture of shs man --w 1024 --h 1024 --s 30 --d 0
+oil painting of shs man --w 1024 --h 1024 --s 30 --d 1
+pencil drawing of shs man  --w 1024 --h 1024 --s 30 --d 2
+watercolor painting of shs man --w 1024 --h 1024 --s 30 --d 3

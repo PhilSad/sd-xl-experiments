@@ -1,0 +1,10 @@
+[[datasets]]
+keep_tokens = 2
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/data/philresize'
+  class_tokens = 'shs man'
+  num_repeats = 10
+
+[general]
+resolution = 1024

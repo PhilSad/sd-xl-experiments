@@ -1,0 +1,52 @@
+[model_arguments]
+v2 = false
+v_parameterization = false
+pretrained_model_name_or_path = "stabilityai/stable-diffusion-xl-base-1.0"
+
+[optimizer_arguments]
+optimizer_type = "adafactor"
+optimizer_args = [ "scale_parameter=False", "relative_step=False", "warmup_init=False" ]
+
+# use_8bit_adam = true
+lr_scheduler = "cosine_with_restarts"
+lr_warmup_steps = 500
+learning_rate = 1e-5 #4e-7 # SDXL original learning rate
+max_grad_norm = 0.0
+train_text_encoder = true
+#lr_scheduler_num_cycles = 2
+[dataset_arguments]
+debug_dataset = false
+
+
+[training_arguments]
+seed = 0
+#output_dir = "models"
+output_dir = "ComfyUI/models/checkpoints"
+output_name = "phil_1000_lr1e-5_cosine_warmup_500"
+save_precision = "bf16"
+save_n_epoch_ratio = 1
+save_state = false
+train_batch_size = 1
+mem_eff_attn = false
+max_train_steps = 1200
+max_data_loader_n_workers = 1
+persistent_data_loader_workers = true
+gradient_checkpointing = true
+# gradient_accumulation_steps = 1
+mixed_precision = "bf16"
+logging_dir = "logs"
+log_prefix = "last"
+sample_prompts = "prompts.txt"
+log_with = "wandb"
+xformers = true
+cache_latents = true
+full_bf16 = true
+
+[sample_prompt_arguments]
+sample_every_n_steps = 100
+sample_sampler = "k_dpm_2"
+
+[saving_arguments]
+save_model_as = "safetensors"
+#save_last_n_steps = 500
+#save_every_n_steps = 250
