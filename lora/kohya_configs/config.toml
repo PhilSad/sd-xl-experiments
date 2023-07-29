@@ -5,25 +5,26 @@ optimizer_type = "adafactor"
 optimizer_args = [ "scale_parameter=False", "relative_step=False", "warmup_init=False" ]
 lr_scheduler = "cosine_with_restarts"
 # lr_warmup_steps = 500
-lr_scheduler_num_cycles = 2
+lr_scheduler_num_cycles = 10
 pretrained_model_name_or_path = "stabilityai/stable-diffusion-xl-base-1.0"
 
-[dataset_arguments]
-train_data_dir=""
 [training_arguments]
 seed = 0
 network_module = "networks.lora"
-text_encoder_lr = 0.0004
-unet_lr = 0.0004
-network_dim = 256
+text_encoder_lr = 0.00004
+unet_lr = 0.00004
+network_dim = 128
 cache_latents = true
 no_half_vae = true
 output_dir = "models"
+logging_dir = "models"
 # output_dir = "ComfyUI/models/checkpoints"
-output_name = "phil_750_lr4e-4_cosine_restarts_2"
+output_name = "phil_1000_lr4e-5_cosine_restarts_10_dim_128"
+log_prefix="phil_1000_lr4e-5_cosine_restarts_10_dim_128"
+log_tracker_config="/workspace/sd-xl-experiments/lora/kohya_configs/config.toml"
 save_precision = "bf16"
 train_batch_size = 1
-max_train_steps = 750
+max_train_steps = 1000
 gradient_checkpointing = true
 # gradient_accumulation_steps = 1
 mixed_precision = "bf16"
@@ -37,5 +38,5 @@ sample_sampler = "k_dpm_2"
 
 [saving_arguments]
 save_model_as = "safetensors"
-#save_last_n_steps = 500
-#save_every_n_steps = 250
+save_last_n_steps = 500
+save_every_n_steps = 250

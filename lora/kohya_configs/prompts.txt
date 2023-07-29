@@ -1,4 +1,4 @@
-picture of shs man, studio photo --w 1024 --h 1024 --s 30 --d 0 --n low quality, worst quality, closed eyes, blur, blurry
-oil painting of shs man --w 1024 --h 1024 --s 30 --d 1 --n low quality, worst quality, closed eyes, blur, blurry
-shs man pencil drawing --w 1024 --h 1024 --s 30 --d 2 --n low quality, worst quality, closed eyes, blur, blurry
-shs man watercolor painting --w 1024 --h 1024 --s 30 --d 3 --n low quality, worst quality, closed eyes, blur, blurry
+picture of shs man, studio photo, 4K, natural lighting, high quality, highly detailed --w 1024 --h 1024 --s 30 --d 0 --n low quality, worst quality, closed eyes, blur, blurry
+shs man drinking coffe in a bar, art by Boris Vallejo, masterpiece, trending on artstation, 8K, hight quality, highly detailed --w 1024 --h 1024 --s 30 --d 1 --n low quality, worst quality, closed eyes, blur, blurry
+portrait of shs man, pencil drawing, masterpiece --w 1024 --h 1024 --s 30 --d 2 --n low quality, worst quality, closed eyes, blur, blurry
+portrait of shs man, watercolor painting , masterpiece --w 1024 --h 1024 --s 30 --d 3 --n low quality, worst quality, closed eyes, blur, blurry
