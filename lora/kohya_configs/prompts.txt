@@ -1,0 +1,4 @@
+picture of shs man, studio photo --w 1024 --h 1024 --s 30 --d 0 --n low quality, worst quality, closed eyes, blur, blurry
+oil painting of shs man --w 1024 --h 1024 --s 30 --d 1 --n low quality, worst quality, closed eyes, blur, blurry
+shs man pencil drawing --w 1024 --h 1024 --s 30 --d 2 --n low quality, worst quality, closed eyes, blur, blurry
+shs man watercolor painting --w 1024 --h 1024 --s 30 --d 3 --n low quality, worst quality, closed eyes, blur, blurry

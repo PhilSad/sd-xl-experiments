@@ -1,0 +1,9 @@
+[[datasets]]
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/sd-xl-experiments/data/phil_1024'
+  class_tokens = 'shs man'
+  num_repeats = 10
+
+[general]
+resolution = 1024
